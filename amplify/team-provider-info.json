@@ -1,0 +1,15 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-hamamatsu-food-deli-master-222902-authRole",
+            "UnauthRoleArn": "arn:aws:iam::783159031027:role/amplify-hamamatsu-food-deli-master-222902-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::783159031027:role/amplify-hamamatsu-food-deli-master-222902-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "amplify-hamamatsu-food-deli-master-222902-deployment",
+            "UnauthRoleName": "amplify-hamamatsu-food-deli-master-222902-unauthRole",
+            "StackName": "amplify-hamamatsu-food-deli-master-222902",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:783159031027:stack/amplify-hamamatsu-food-deli-master-222902/41dd80d0-7678-11ea-a277-0af0ae9d5064",
+            "AmplifyAppId": "d1nx95g7zg0mgk"
+        }
+    }
+}
