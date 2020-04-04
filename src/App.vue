@@ -12,28 +12,17 @@
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+      <v-toolbar-title>Takeout Hamamatsu</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
-      <Top/>
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import Menu from './views/Menu'
-import Top from './views/Top'
 
 export default {
   name: 'App',
@@ -42,7 +31,6 @@ export default {
       drawer: null,
     }),
     components: {
-      Top,
       Menu,
     },
 };
