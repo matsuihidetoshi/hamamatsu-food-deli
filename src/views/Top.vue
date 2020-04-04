@@ -12,16 +12,11 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
+          お店の味を<br>Takeout!
         </h1>
 
         <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
+          お店とおうちを<br>つなげるサイト
         </p>
       </v-col>
 
@@ -30,20 +25,16 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          What's next?
+          使い方
         </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ next.text }}
-          </a>
-        </v-row>
+        <div>お店を選ぼう</div>
+        <div><router-link to="/shops">一覧</router-link></div>
+        <div>⬇︎</div>
+        <div>メニューをチェック</div>
+        <div>⬇︎</div>
+        <div>お店にTEL予約</div>
+        <div>⬇︎</div>
+        <div>お店に行って受け取ろう！</div>
       </v-col>
 
       <v-col
@@ -51,8 +42,16 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          Important Links
+          大事なページ
         </h2>
+        <p class="description">
+          <span>浜松市では、新型コロナウイルス</span>
+          <span>感染症防止のために各種の</span>
+          <span>対策サイトを公開して居ます。</span>
+          <span>オープンソースプロジェクトとして</span>
+          <span>進行しており、下記リンクより</span>
+          <span>開発に貢献していただくことができます。</span>
+        </p>
 
         <v-row justify="center">
           <a
@@ -63,27 +62,6 @@
             target="_blank"
           >
             {{ link.text }}
-          </a>
-        </v-row>
-      </v-col>
-
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
           </a>
         </v-row>
       </v-col>
@@ -112,24 +90,16 @@
       ],
       importantLinks: [
         {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
+          text: '浜松市新型コロナウイルス感染症拡大防止サイト',
+          href: 'https://stopcovid19-hamamatsu.netlify.com/',
         },
         {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
+          text: '防止サイトGitHub',
+          href: 'https://github.com/code-for-hamamatsu',
         },
         {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
+          text: 'このサイトのGitHub',
+          href: 'https://github.com/matsuihidetoshi/hamamatsu-food-deli',
         },
       ],
       whatsNext: [
@@ -149,3 +119,8 @@
     }),
   }
 </script>
+<style>
+.description span {
+  display: inline-block;
+}
+</style>
