@@ -1,11 +1,17 @@
 <template>
   <v-app>
+    <v-navigation-drawer
+      v-model="drawer"
+      app
+    >
+      <Menu />
+    </v-navigation-drawer>
     <v-app-bar
       app
       color="primary"
       dark
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
 
       <v-spacer></v-spacer>
 
@@ -20,23 +26,24 @@
     </v-app-bar>
 
     <v-content>
-      <HelloWorld/>
+      <Top/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Menu from './views/Menu'
+import Top from './views/Top'
 
 export default {
   name: 'App',
 
-  components: {
-    HelloWorld,
-  },
-
   data: () => ({
-    //
-  }),
+      drawer: null,
+    }),
+    components: {
+      Top,
+      Menu,
+    },
 };
 </script>
