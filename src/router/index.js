@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Top from '../views/Top.vue'
+import ShopIndex from '../components/ShopIndex.vue'
+import Sol from '../components/shops/Sol.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +11,16 @@ const routes = [
     path: '/',
     name: 'Top',
     component: Top
+  },
+  {
+    path: '/shops',
+    name: 'ShopIndex',
+    component: ShopIndex
+  },
+  {
+    path: '/shops/sol',
+    name: 'Sol',
+    component: Sol
   },
   {
     path: '/about',
